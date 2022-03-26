@@ -9,4 +9,6 @@ public class Save
     public int HP;
     public float Speed;
     public int Jumps;
+    public float Music;
+    public float SFX;
 }

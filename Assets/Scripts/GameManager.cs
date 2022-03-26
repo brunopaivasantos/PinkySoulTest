@@ -5,18 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    enum SceneType { Game, MainMenu, HUB };
 
     public static GameManager Instance;
     SaveScript saveScript;
     GameData gameData;
     bool waiting;
-    SceneType sceneType;
+    Enums.SceneType sceneType;
     int scene;
     private void Awake()
     {
         if (Instance == null)
         {
+            sceneType = Enums.SceneType.MainMenu;
             Instance = this;
             saveScript = this.GetComponent<SaveScript>();
             gameData = this.GetComponent<GameData>();
@@ -29,9 +29,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void Restart()
+    public void Play()
     {
-        sceneType = SceneType.Game;
+        sceneType = Enums.SceneType.Game;
         ScreenTransition.Instance.FadeOut();
     }
 
@@ -97,19 +97,47 @@ public class GameManager : MonoBehaviour
         saveScript.SaveData();
     }
 
+    public float GetMusicVolume()
+    {
+        return gameData.Music;
+    }
+
+    public float GetSFXVolume()
+    {
+        return gameData.Sfx;
+    }
+
+    public void SetMusicVolume(float volume)
+    {
+        gameData.Music = volume;
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        gameData.Sfx = volume;
+    }
+
+    public void Save()
+    {
+        saveScript.SaveData();
+    }
     void StopWaiting()
     {
         waiting = false;
 
         switch (sceneType)
         {
-            case SceneType.Game:
+            case Enums.SceneType.Game:
+                SceneManager.LoadScene("Game");
                 break;
 
-            case SceneType.HUB:
+            case Enums.SceneType.HUB:
+                SceneManager.LoadScene("HUB");
                 break;
 
-            case SceneType.MainMenu:
+            case Enums.SceneType.MainMenu:
+                SceneManager.LoadScene("MainMenu");
+
                 break;
         }
 

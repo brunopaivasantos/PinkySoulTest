@@ -24,11 +24,14 @@ public class SaveScript : MonoBehaviour
             HP = gameData.HP,
             Speed = gameData.Speed,
             Jumps = gameData.Jumps,
-            shopItemQuantity = new List<int>()
+            shopItemQuantity = new List<int>(),
+            Music = gameData.Music,
+            SFX = gameData.Sfx
+
             //SavedString = gameData.GameString
         };
 
-        foreach(int i in gameData.shopItemQuantity)
+        foreach (int i in gameData.shopItemQuantity)
         {
             save.shopItemQuantity.Add(i);
         }
@@ -58,8 +61,10 @@ public class SaveScript : MonoBehaviour
             gameData.HP = save.HP;
             gameData.Speed = save.Speed;
             gameData.Jumps = save.Jumps;
+            gameData.Sfx = save.SFX;
+            gameData.Music = save.Music;
             gameData.shopItemQuantity = new List<int>();
-            foreach(int i in save.shopItemQuantity)
+            foreach (int i in save.shopItemQuantity)
             {
                 gameData.shopItemQuantity.Add(i);
             }
