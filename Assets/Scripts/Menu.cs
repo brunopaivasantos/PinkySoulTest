@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -10,6 +11,7 @@ public class Menu : MonoBehaviour
 
     [SerializeField] GameObject retryButton;
    [SerializeField] Transform panel;
+    [SerializeField] TextMeshProUGUI coins;
     private void Awake()
     {
         Instance = this;
@@ -18,6 +20,7 @@ public class Menu : MonoBehaviour
    
     public void OpenPopUp()
     {
+        coins.text = GameManager.Instance.GetCoins().ToString();
         anim.SetTrigger("Open");
         EventSystem.current.SetSelectedGameObject(retryButton);
     }

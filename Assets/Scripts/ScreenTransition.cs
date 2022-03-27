@@ -61,7 +61,7 @@ public class ScreenTransition : MonoBehaviour
     {
         if (fading)
         {
-            elapsedTime += Time.deltaTime * fadeSpeed;
+            elapsedTime += Time.unscaledDeltaTime * fadeSpeed;
             canvasGroup.alpha = Mathf.Lerp(canvasAlpha, fadeTarget, elapsedTime);
             if (elapsedTime >= 1f)
             {

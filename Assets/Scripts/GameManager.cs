@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     bool waiting;
     Enums.SceneType sceneType;
     int scene;
+    bool changingScene;
     private void Awake()
     {
         if (Instance == null)
@@ -31,6 +32,14 @@ public class GameManager : MonoBehaviour
 
     public void Play()
     {
+        changingScene = true;
+        sceneType = Enums.SceneType.Game;
+        ScreenTransition.Instance.FadeOut();
+    }
+
+    public void Restart()
+    {
+        changingScene = true;
         sceneType = Enums.SceneType.Game;
         ScreenTransition.Instance.FadeOut();
     }
@@ -63,12 +72,11 @@ public class GameManager : MonoBehaviour
 
     public void SetShopItemQuantity(List<int> itens)
     {
-        int index = 0;
-        foreach (int i in itens)
+        for(int i = 0; i < itens.Count; i++)
         {
-            gameData.shopItemQuantity[index] = i;
-            index++;
+            gameData.shopItemQuantity[i] = itens[i];
         }
+      
 
         saveScript.SaveData();
     }
@@ -79,10 +87,19 @@ public class GameManager : MonoBehaviour
         saveScript.SaveData();
     }
 
+    public int GetHP()
+    {
+        return gameData.HP;
+    }
+
     public void SetSpeed(float speed)
     {
         gameData.Speed = speed;
         saveScript.SaveData();
+    }
+    public float GetSpeed()
+    {
+        return gameData.Speed;
     }
 
     public void SetJumps(int jumps)
@@ -91,12 +108,19 @@ public class GameManager : MonoBehaviour
         saveScript.SaveData();
     }
 
+    public int GetJumps()
+    {
+        return gameData.Jumps;
+    }
     public void SetCoins(int coins)
     {
         gameData.Coins = coins;
         saveScript.SaveData();
     }
-
+    public int GetCoins()
+    {
+        return gameData.Coins;
+    }
     public float GetMusicVolume()
     {
         return gameData.Music;
@@ -124,7 +148,7 @@ public class GameManager : MonoBehaviour
     void StopWaiting()
     {
         waiting = false;
-
+        if (!changingScene) return;
         switch (sceneType)
         {
             case Enums.SceneType.Game:
@@ -141,6 +165,9 @@ public class GameManager : MonoBehaviour
                 break;
         }
 
+
+        Time.timeScale = 1;
+        changingScene = false;
     }
 
     public void ChangeScene(int index)
@@ -150,7 +177,8 @@ public class GameManager : MonoBehaviour
 
     public void GameOver(int coins)
     {
-        gameData.Coins += coins;
+        Time.timeScale = 0;
+        gameData.Coins = coins;
         saveScript.SaveData();
         Menu.Instance.OpenPopUp();
     }
@@ -166,6 +194,15 @@ public class GameManager : MonoBehaviour
 
     public void OpenHUB()
     {
-        HUB.Instance.OpenHUB();
+        changingScene = true;
+        sceneType = Enums.SceneType.HUB;
+        ScreenTransition.Instance.FadeOut();
+    }
+
+    public void MainMenu()
+    {
+        changingScene = true;
+        sceneType = Enums.SceneType.MainMenu;
+        ScreenTransition.Instance.FadeOut();
     }
 }

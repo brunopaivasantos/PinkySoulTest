@@ -12,8 +12,7 @@ public class SaveScript : MonoBehaviour
 
     void Start()
     {
-        gameData = GetComponent<GameData>();
-        savePath = Application.persistentDataPath + "/gamesave.save";
+        
     }
 
     public void SaveData()
@@ -47,6 +46,9 @@ public class SaveScript : MonoBehaviour
 
     public void LoadData()
     {
+        gameData = GetComponent<GameData>();
+        savePath = Application.persistentDataPath + "/gamesave.save";
+        Debug.Log(savePath);
         if (File.Exists(savePath))
         {
             Save save;
@@ -73,7 +75,19 @@ public class SaveScript : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Save file doesn't exist.");
+            gameData.Coins = 0;
+            gameData.HP = 1;
+            gameData.Speed = 5;
+            gameData.Jumps = 3;
+            gameData.Sfx = 1;
+            gameData.Music = 1;
+            gameData.shopItemQuantity = new List<int>();
+            for (int i = 0; i < 4; i++)
+            {
+                gameData.shopItemQuantity.Add(0);
+            }
+            SaveData();
+            Debug.LogWarning("New Save Created.");
         }
     }
 }

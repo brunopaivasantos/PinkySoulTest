@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 5883580}
   - component: {fileID: 5883579}
   - component: {fileID: 5883578}
+  - component: {fileID: 5883582}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -197,10 +198,10 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 1050990703}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 695992822}
+    m_SelectOnDown: {fileID: 777396736}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 1225216546}
   m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -226,14 +227,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 291985841}
-        m_TargetAssemblyTypeName: HUB, Assembly-CSharp
-        m_MethodName: Shop
-        m_Mode: 1
+      - m_Target: {fileID: 552451069}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: SelectItem
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -276,6 +277,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5883576}
   m_CullTransparentMesh: 1
+--- !u!114 &5883582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5883576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a381090b9a6a0d944819589ae6b8a05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &48673890
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,8 +633,8 @@ MonoBehaviour:
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 2003399654}
-    m_SelectOnLeft: {fileID: 2003399654}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 2003399654}
   m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1518,6 +1531,10 @@ MonoBehaviour:
   upgrade: {fileID: 957054888}
   panel: {fileID: 538272617}
   playButton: {fileID: 2003399651}
+  shopBackButton: {fileID: 777396735}
+  upgradeBackButton: {fileID: 2093147908}
+  upgradeButton: {fileID: 395144258}
+  shopButton: {fileID: 2044398445}
 --- !u!95 &291985843
 Animator:
   serializedVersion: 3
@@ -1670,6 +1687,7 @@ GameObject:
   - component: {fileID: 343978304}
   - component: {fileID: 343978303}
   - component: {fileID: 343978302}
+  - component: {fileID: 343978306}
   m_Layer: 5
   m_Name: Speed
   m_TagString: Untagged
@@ -1731,10 +1749,10 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 522190537}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 360098019}
+    m_SelectOnDown: {fileID: 775382891}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 2093147909}
   m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1760,14 +1778,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 291985841}
-        m_TargetAssemblyTypeName: HUB, Assembly-CSharp
-        m_MethodName: Shop
-        m_Mode: 1
+      - m_Target: {fileID: 957054888}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: SelectItem
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1810,6 +1828,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343978300}
   m_CullTransparentMesh: 1
+--- !u!114 &343978306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343978300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a381090b9a6a0d944819589ae6b8a05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &358636865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,6 +1923,7 @@ GameObject:
   - component: {fileID: 360098020}
   - component: {fileID: 360098019}
   - component: {fileID: 360098018}
+  - component: {fileID: 360098022}
   m_Layer: 5
   m_Name: HP
   m_TagString: Untagged
@@ -1954,10 +1985,10 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 522190537}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 343978303}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 2093147909}
   m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1983,10 +2014,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 291985841}
-        m_TargetAssemblyTypeName: HUB, Assembly-CSharp
-        m_MethodName: Shop
-        m_Mode: 1
+      - m_Target: {fileID: 957054888}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: SelectItem
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2033,6 +2064,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360098016}
   m_CullTransparentMesh: 1
+--- !u!114 &360098022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360098016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a381090b9a6a0d944819589ae6b8a05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &395144258
 GameObject:
   m_ObjectHideFlags: 0
@@ -2629,8 +2672,8 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 2093147909}
+    m_SelectOnUp: {fileID: 775382891}
+    m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 2093147909}
   m_Transition: 3
@@ -2658,9 +2701,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 291985841}
-        m_TargetAssemblyTypeName: HUB, Assembly-CSharp
-        m_MethodName: Play
+      - m_Target: {fileID: 957054888}
+        m_TargetAssemblyTypeName: Upgrade, Assembly-CSharp
+        m_MethodName: BuyItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2851,7 +2894,7 @@ RectTransform:
   m_GameObject: {fileID: 552451067}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 343421157}
   - {fileID: 2043970305}
@@ -2877,10 +2920,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a3b302dc1b11044db79c5dbc0268e2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itens: []
-  content: {fileID: 0}
-  description: {fileID: 0}
-  coinsText: {fileID: 0}
+  itens:
+  - {fileID: 11400000, guid: bf3165a939b518a43bce99e5f912a931, type: 2}
+  - {fileID: 11400000, guid: 1d41f25a81f30d24d98ae6aa020376f1, type: 2}
+  - {fileID: 11400000, guid: 1cbc22cb4869148418563f9eba566f51, type: 2}
+  - {fileID: 11400000, guid: 4541e9a658c3b754c98766fba0ade8e1, type: 2}
+  content: {fileID: 1810117487}
+  description: {fileID: 989884228}
+  coinsText: {fileID: 48673892}
+  buyButton: {fileID: 1050990703}
 --- !u!114 &552451070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3280,6 +3328,7 @@ GameObject:
   - component: {fileID: 695992823}
   - component: {fileID: 695992822}
   - component: {fileID: 695992821}
+  - component: {fileID: 695992825}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -3341,10 +3390,10 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 1050990703}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 5883579}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 1356533585}
   m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -3370,10 +3419,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 291985841}
-        m_TargetAssemblyTypeName: HUB, Assembly-CSharp
-        m_MethodName: Shop
-        m_Mode: 1
+      - m_Target: {fileID: 552451069}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: SelectItem
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3420,6 +3469,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695992819}
   m_CullTransparentMesh: 1
+--- !u!114 &695992825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695992819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a381090b9a6a0d944819589ae6b8a05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &706896425
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,6 +3781,7 @@ GameObject:
   - component: {fileID: 775382892}
   - component: {fileID: 775382891}
   - component: {fileID: 775382890}
+  - component: {fileID: 775382894}
   m_Layer: 5
   m_Name: Jump
   m_TagString: Untagged
@@ -3781,10 +3843,10 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 522190537}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 343978303}
+    m_SelectOnDown: {fileID: 2093147909}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 2093147909}
   m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -3810,14 +3872,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 291985841}
-        m_TargetAssemblyTypeName: HUB, Assembly-CSharp
-        m_MethodName: Shop
-        m_Mode: 1
+      - m_Target: {fileID: 957054888}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: SelectItem
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3860,6 +3922,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775382888}
   m_CullTransparentMesh: 1
+--- !u!114 &775382894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775382888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a381090b9a6a0d944819589ae6b8a05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &777396735
 GameObject:
   m_ObjectHideFlags: 0
@@ -3895,9 +3969,9 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 1050990703}
+    m_SelectOnUp: {fileID: 1225216546}
     m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnLeft: {fileID: 1050990703}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 3
   m_Colors:
@@ -3926,7 +4000,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 291985841}
         m_TargetAssemblyTypeName: HUB, Assembly-CSharp
-        m_MethodName: Shop
+        m_MethodName: CloseShop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4378,7 +4452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &957054887
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4388,7 +4462,7 @@ RectTransform:
   m_GameObject: {fileID: 957054886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2025450568}
   - {fileID: 277577750}
@@ -4414,6 +4488,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4225a55fabf7b458e10f49d4d678ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itens: []
+  content: {fileID: 821823289}
+  description: {fileID: 1510386800}
+  coinsText: {fileID: 1751501084}
+  buyButton: {fileID: 522190537}
+  upgradeItens:
+  - {fileID: 11400000, guid: 1eb5f7603c0fe1f45a3f7bdf3dc28bb7, type: 2}
+  - {fileID: 11400000, guid: b0d556bc134c2ab40b9ef85556092d2a, type: 2}
+  - {fileID: 11400000, guid: 672deb3f7f7c4ec4b959e8709189693f, type: 2}
+  maxHp: 5
+  maxSpeed: 15
+  maxJumps: 1000
+  hpTextQuantity: {fileID: 1862672763}
+  speedTextQuantity: {fileID: 1064826239}
+  jumpsTextQuantity: {fileID: 1744334355}
 --- !u!114 &957054889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4889,8 +4978,8 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 777396736}
+    m_SelectOnUp: {fileID: 1225216546}
+    m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 777396736}
   m_Transition: 3
@@ -4918,9 +5007,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 291985841}
-        m_TargetAssemblyTypeName: HUB, Assembly-CSharp
-        m_MethodName: Play
+      - m_Target: {fileID: 552451069}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: BuyItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5297,7 +5386,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1102973177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5412,6 +5501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   retryButton: {fileID: 2129497427}
   panel: {fileID: 1355008344}
+  coins: {fileID: 0}
 --- !u!1 &1134700236
 GameObject:
   m_ObjectHideFlags: 0
@@ -5711,6 +5801,7 @@ GameObject:
   - component: {fileID: 1225216547}
   - component: {fileID: 1225216546}
   - component: {fileID: 1225216545}
+  - component: {fileID: 1225216549}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -5772,10 +5863,10 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 1050990703}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnUp: {fileID: 1356533585}
+    m_SelectOnDown: {fileID: 777396736}
+    m_SelectOnLeft: {fileID: 5883579}
+    m_SelectOnRight: {fileID: 777396736}
   m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -5801,14 +5892,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 291985841}
-        m_TargetAssemblyTypeName: HUB, Assembly-CSharp
-        m_MethodName: Shop
-        m_Mode: 1
+      - m_Target: {fileID: 552451069}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: SelectItem
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5851,6 +5942,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225216543}
   m_CullTransparentMesh: 1
+--- !u!114 &1225216549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225216543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a381090b9a6a0d944819589ae6b8a05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1234875007
 GameObject:
   m_ObjectHideFlags: 0
@@ -6326,6 +6429,7 @@ GameObject:
   - component: {fileID: 1356533586}
   - component: {fileID: 1356533585}
   - component: {fileID: 1356533584}
+  - component: {fileID: 1356533588}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -6387,10 +6491,10 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 1050990703}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 1225216546}
+    m_SelectOnLeft: {fileID: 695992822}
+    m_SelectOnRight: {fileID: 777396736}
   m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -6416,14 +6520,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 291985841}
-        m_TargetAssemblyTypeName: HUB, Assembly-CSharp
-        m_MethodName: Shop
-        m_Mode: 1
+      - m_Target: {fileID: 552451069}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: SelectItem
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6466,6 +6570,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356533582}
   m_CullTransparentMesh: 1
+--- !u!114 &1356533588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356533582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a381090b9a6a0d944819589ae6b8a05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1380856898
 GameObject:
   m_ObjectHideFlags: 0
@@ -7988,8 +8104,8 @@ MonoBehaviour:
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 84638394}
     m_SelectOnDown: {fileID: 2044398448}
-    m_SelectOnLeft: {fileID: 395144261}
-    m_SelectOnRight: {fileID: 2044398448}
+    m_SelectOnLeft: {fileID: 2044398448}
+    m_SelectOnRight: {fileID: 395144261}
   m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -8502,9 +8618,9 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 522190537}
+    m_SelectOnUp: {fileID: 775382891}
     m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnLeft: {fileID: 522190537}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 3
   m_Colors:
@@ -8533,7 +8649,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 291985841}
         m_TargetAssemblyTypeName: HUB, Assembly-CSharp
-        m_MethodName: Shop
+        m_MethodName: CloseUpgrades
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
