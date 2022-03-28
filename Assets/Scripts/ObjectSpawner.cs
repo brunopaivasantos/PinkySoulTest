@@ -19,16 +19,28 @@ public class ObjectSpawner : MonoBehaviour
     float coinInterval;
     float timeObstacle;
     float obstacleInterval;
+
+    bool gameOver;
     // Start is called before the first frame update
     void Start()
     {
+        gameOver = false;
         SetCoinInterval();
         SetObstacleInterval();
+        Player.gameOver += GameOver;
     }
-
+    private void OnDisable()
+    {
+        Player.gameOver -= GameOver;
+    }
+    void GameOver()
+    {
+        gameOver = true;
+    }
     // Update is called once per frame
     void Update()
     {
+        if (gameOver) return;
         timeCoin += Time.deltaTime;
         timeObstacle += Time.deltaTime;
 

@@ -8,15 +8,23 @@ public class ObjectMovement : MonoBehaviour
     [SerializeField] float incSpeed;
     [SerializeField] float speedIncInterval;
     float time;
+    bool gameOver;
     // Start is called before the first frame update
     void Start()
     {
+        gameOver = false;
         speed = GameManager.Instance.GetSpeed();
+        Player.gameOver += GameOver;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
+        Player.gameOver -= GameOver;
+    }
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        if (gameOver) return;
         this.transform.Translate(Vector2.left * speed * Time.deltaTime);
 
         time += Time.deltaTime;
@@ -30,5 +38,10 @@ public class ObjectMovement : MonoBehaviour
     {
         speed += incSpeed;
         time = 0;
+    }
+
+    void GameOver()
+    {
+        gameOver = true;
     }
 }
