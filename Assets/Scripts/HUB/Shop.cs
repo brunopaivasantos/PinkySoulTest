@@ -77,7 +77,6 @@ public class Shop : MonoBehaviour
             t.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = itens[index].name;
             t.GetChild(1).GetComponent<TextMeshProUGUI>().text = shopQuantity[index].ToString();
 
-            Debug.Log("shopQuantity" + shopQuantity[index]);
             itembuttons.Add(t.GetChild(0).GetComponent<Button>());
             itembuttons[index].transform.parent.GetChild(1).GetComponent<TextMeshProUGUI>().text = shopQuantity[index].ToString();
             index++;

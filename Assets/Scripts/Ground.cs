@@ -24,7 +24,6 @@ public class Ground : MonoBehaviour
     void FixedUpdate()
     {
         if (gameOver) return;
-        Debug.Log(ground1.position.x);
         ground1.Translate(Vector2.left * speed * Time.deltaTime, Space.Self);
         ground2.Translate(Vector2.left * speed * Time.deltaTime,Space.Self);
 

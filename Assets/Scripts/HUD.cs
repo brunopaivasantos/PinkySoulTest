@@ -35,12 +35,20 @@ public class HUD : MonoBehaviour
 
     public void DecreaseLife(int life)
     {
-        if (life >= lifes.Count) return;
+        if (life >= lifes.Count || life < 0) return;
         lifes[life].color = Color.gray;
     }
 
     public void NoJumpAnimation()
     {
         this.GetComponent<Animator>().Play("NoJump", -1, 0);
+    }
+
+    public Vector2 GetCoinImagePoisition()
+    {
+        
+      //  Rect rect = RectTransformUtility.PixelAdjustRect(coinImage.GetComponent<RectTransform>(), this.GetComponent<Canvas>());
+        return Camera.main.ScreenToWorldPoint(coinImage.rectTransform.position);
+
     }
 }

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5225802583dc35440b5ac3f7d5b310dc, type: 3}
-  m_Name: test2
+  m_Name: Whale
   m_EditorClassIdentifier: 
-  name: Test2
-  description: Test test test
+  name: Whale
+  description: Just because there was nothing referencing the game title.
   cost: 5

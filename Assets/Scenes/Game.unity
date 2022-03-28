@@ -217,7 +217,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 201048b5af31be142bf271e5f216d697, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 201048b5af31be142bf271e5f216d697, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -555,8 +555,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4293836288
-  m_fontColor: {r: 0, g: 0.7466229, b: 0.9339623, a: 1}
+    rgba: 4290510977
+  m_fontColor: {r: 0.50576496, g: 0, b: 0.735849, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1253,7 +1253,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!114 &727219730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2633,7 +2633,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b0b4b3aa2bc24cf409528a993b14b530, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3424,8 +3424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinPrefab: {fileID: 5054785048427785235, guid: 41d668d5de4d1484ea3f7d4012d283fc, type: 3}
   obstaclePrefab: {fileID: 5604026385062936562, guid: 1d66dbc3913015845aa978aeb89274f8, type: 3}
-  minIntervalObstacle: 2
-  maxIntervalObstacle: 7
+  minIntervalObstacle: 1.5
+  maxIntervalObstacle: 4
   minIntervalCoin: 0.5
   maxIntervalCoin: 1
   coinPoint: {fileID: 1324222588}

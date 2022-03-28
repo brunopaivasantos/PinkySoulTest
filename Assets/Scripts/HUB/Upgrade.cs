@@ -94,7 +94,7 @@ public class Upgrade : Shop
                 break;
 
             case Enums.Upgrade.speed:
-                speed = 2 * speed;
+                speed += 3;
                 speedTextQuantity.text = speed.ToString("F1");
                 if (speed >= maxSpeed)
                 {

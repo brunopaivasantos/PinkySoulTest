@@ -39,7 +39,6 @@ public class MainMenu : MonoBehaviour
             time += Time.deltaTime;
             if(Keyboard.current.anyKey.wasPressedThisFrame && time > creditsInitialTime)
             {
-                Debug.Log("keyPressed");
                 EndCredits();
             }
         }

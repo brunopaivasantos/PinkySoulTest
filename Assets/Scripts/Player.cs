@@ -71,7 +71,8 @@ public class Player : MonoBehaviour
     {
         if (collision.tag == "Coin")
         {
-            Destroy(collision.gameObject);
+            // Destroy(collision.gameObject);
+            collision.GetComponent<ObjectMovement>().GoToHud(hud);
             coins++;
             hud.UpdateCoins(coins);
         }

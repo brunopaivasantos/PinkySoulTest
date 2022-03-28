@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 1}
+  m_Color: {r: 0.3773585, g: 0.24029905, b: 0.24029905, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1079,65 +1079,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus nibh
-    neque, non semper tortor faucibus eu. Sed sed suscipit felis, nec ultricies quam.
-    Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam vitae euismod
-    nisl. Nullam egestas massa ac nisl fermentum congue imperdiet ornare purus. Curabitur
-    euismod nunc malesuada tincidunt tempus. Ut quis ultrices dolor. Mauris sit amet
-    magna non turpis sollicitudin fermentum. Curabitur tortor erat, malesuada quis
-    tellus ut, feugiat luctus tellus. Etiam consectetur posuere metus, et venenatis
-    lectus faucibus sit amet. Morbi vitae tempus lectus. In tincidunt turpis sit
-    amet tempor ultricies.
-
-
-
-    Mauris vitae eros nec lectus iaculis imperdiet
-    quis a mauris. Praesent placerat, mauris ac ultrices posuere, leo urna fermentum
-    felis, gravida ullamcorper ex dui quis justo. Suspendisse bibendum varius justo
-    pellentesque suscipit. Suspendisse vel quam at lorem facilisis ullamcorper nec
-    vitae purus. Donec eu lectus lacinia, feugiat lectus a, efficitur massa. Nunc
-    tincidunt laoreet ornare. Maecenas vitae dui id libero placerat finibus. Aenean
-    facilisis gravida purus ut varius. Morbi maximus arcu sapien, nec consequat lectus
-    facilisis at. Ut pretium elit non ipsum commodo malesuada vitae ac ipsum. Vestibulum
-    fringilla, libero fringilla luctus hendrerit, ipsum mauris venenatis nisl, sit
-    amet consectetur ipsum sapien ac felis. Duis tincidunt accumsan convallis. Maecenas
-    suscipit pretium dictum. Fusce dapibus vel mauris id luctus. Mauris nec nunc
-    nec turpis sollicitudin pellentesque id quis ipsum. Nullam rhoncus enim id tempus
-    rhoncus.
-
-
-
-    Vivamus suscipit bibendum ligula, sit amet faucibus enim maximus
-    eu. Cras sagittis tellus sit amet urna porttitor lacinia. Mauris nec semper ipsum.
-    Fusce venenatis dolor id turpis commodo semper. Integer egestas in nibh et feugiat.
-    Cras in leo non nibh finibus bibendum id sit amet quam. Ut eget ipsum diam. Morbi
-    eu commodo odio, quis ultricies odio. Nulla a interdum justo, nec feugiat ante.
-    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-    curae;
-
-
-
-    Duis gravida mi non volutpat maximus. Mauris fermentum accumsan
-    lectus, nec placerat est elementum ac. Aliquam pretium, velit in feugiat sodales,
-    felis neque mattis ligula, non commodo ipsum eros venenatis enim. Ut congue leo
-    id dignissim egestas. Praesent vitae fermentum orci. Nam vehicula tincidunt justo
-    vitae varius. Curabitur vulputate justo tellus, in pretium ligula rhoncus ultricies.
-    Phasellus porta pellentesque dui sed faucibus. Nullam varius purus et erat euismod
-    aliquam. Vestibulum ac suscipit tellus. Vivamus et diam vitae metus rhoncus pellentesque
-    vitae a magna. Morbi venenatis nisi in mi sollicitudin gravida. Interdum et malesuada
-    fames ac ante ipsum primis in faucibus. Aenean suscipit urna turpis, pretium
-    rhoncus quam tincidunt a. Praesent facilisis neque in purus sollicitudin, eget
-    feugiat libero cursus. Integer condimentum arcu nec dui tincidunt rhoncus.
-
-
-
-    In
-    odio urna, consequat nec diam a, gravida porta metus. Nunc magna sapien, laoreet
-    ut convallis eget, finibus et nisi. Aenean a est a urna auctor congue. Pellentesque
-    pretium lectus sed mi hendrerit, at faucibus nibh volutpat. Pellentesque quis
-    elit libero. Nulla mollis facilisis dui, id sodales massa finibus quis. Curabitur
-    at placerat nulla. Sed finibus quam fermentum felis gravida cursus. Nullam pulvinar,
-    ipsum feugiat faucibus.'
+  m_text: "Programmer - Bruno C\xE9zar\nCharacter Designer - Bruno C\xE9zar \nCharacter
+    Animation - Bruno C\xE9zar\n\nAssets:\n\n\tScenary: \n\n\tUnity Asset Store\n\tOne
+    Point Six Studio - \n\t\t2D Platformer Art Pack\n\t\n\n\tSounds form FreeSound.org:\n\t\n\t\n\tBGM:
+    Sonically_sound -\n\t Retro Funk\t\n\n\tSFX: Bastinhalo - Cartoon Jump\n\t"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1560,8 +1505,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -85}
-  m_SizeDelta: {x: 1138.564, y: 340.709}
+  m_AnchoredPosition: {x: -11, y: -65}
+  m_SizeDelta: {x: 1134.0142, y: 361.1834}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &447474220
 MonoBehaviour:
@@ -1576,14 +1521,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5330188, g: 0.89587456, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9d2a71bd7d0d28e4ba05afb766e366eb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4770,8 +4715,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: 0.000015259}
-  m_SizeDelta: {x: 688.002, y: 304.341}
+  m_AnchoredPosition: {x: 0.000015259, y: 17}
+  m_SizeDelta: {x: 825.7175, y: 436.2375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1544556700
 MonoBehaviour:
@@ -4793,9 +4738,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9d2a71bd7d0d28e4ba05afb766e366eb, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5604026385062936564}
   - component: {fileID: 5604026385062936566}
   - component: {fileID: 5604026385062936565}
-  - component: {fileID: 5604026385062936567}
+  - component: {fileID: 604919730}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Obstacle
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 5604026385062936562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.75, y: -1.05, z: 0}
-  m_LocalScale: {x: 0.6478, y: 1.3945, z: 1}
+  m_LocalScale: {x: 0.23367578, y: 0.23367578, z: 0.23367578}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 20
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cbcd80eb3afd18e4eb354d009b307d47, type: 3}
   m_Color: {r: 0.8679245, g: 0.74988467, b: 0.2251691, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,8 +99,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5604026385062936567
-BoxCollider2D:
+--- !u!60 &604919730
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -116,12 +116,20 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 4.36, y: 8.48}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.6958523, y: 3.206211}
+      - {x: 0.45573673, y: 4.1844454}
+      - {x: -0.15225273, y: 4.2653756}
+      - {x: -0.72198844, y: 3.108419}
+      - {x: -1.5710444, y: 2.47751}
+      - {x: -1.7386835, y: -1.816605}
+      - {x: -1.7055664, y: -3.1257246}
+      - {x: 1.7816927, y: -3.1003487}
+      - {x: 1.6979227, y: 2.3506327}

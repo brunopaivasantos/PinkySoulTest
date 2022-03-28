@@ -48,7 +48,6 @@ public class SaveScript : MonoBehaviour
     {
         gameData = GetComponent<GameData>();
         savePath = Application.persistentDataPath + "/gamesave.save";
-        Debug.Log(savePath);
         if (File.Exists(savePath))
         {
             Save save;
@@ -77,7 +76,7 @@ public class SaveScript : MonoBehaviour
         {
             gameData.Coins = 0;
             gameData.HP = 1;
-            gameData.Speed = 5;
+            gameData.Speed = 7;
             gameData.Jumps = 3;
             gameData.Sfx = 1;
             gameData.Music = 1;
