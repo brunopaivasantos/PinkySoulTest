@@ -35,6 +35,7 @@ public class HUD : MonoBehaviour
 
     public void DecreaseLife(int life)
     {
+        if (life >= lifes.Count) return;
         lifes[life].color = Color.gray;
     }
 

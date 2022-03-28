@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 using UnityEngine.Playables;
 using UnityEngine.UI;
 
@@ -20,6 +21,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField] GameObject creditsButton;
 
     bool playingCredits;
+    float creditsInitialTime = .5f;
+    float time;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +36,10 @@ public class MainMenu : MonoBehaviour
     {
         if (playingCredits)
         {
-            if(Input.anyKey)
+            time += Time.deltaTime;
+            if(Keyboard.current.anyKey.wasPressedThisFrame && time > creditsInitialTime)
             {
+                Debug.Log("keyPressed");
                 EndCredits();
             }
         }
@@ -127,10 +132,12 @@ public class MainMenu : MonoBehaviour
 
     public void Credits()
     {
+        if (playingCredits) return;
         credits.gameObject.SetActive(true);
         playingCredits = true;
         credits.Play();
         credits.stopped += EndCredits;
+        time = 0;
     }
 
     public void EndCredits(PlayableDirector credits)
