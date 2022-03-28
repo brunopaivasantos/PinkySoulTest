@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
 
     void Jump()
     {
+        SoundManager.Instance.Play(AudioTypes.SFX_Jump);
         jumps--;
         hud.UpdateJumps(jumps);
         jumping = true;

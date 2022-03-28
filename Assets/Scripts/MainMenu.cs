@@ -96,6 +96,10 @@ public class MainMenu : MonoBehaviour
         Enums.Resolution res = (Enums.Resolution)resolution.value;
         switch (res)
         {
+            case Enums.Resolution.Lower:
+                Screen.SetResolution(1024, 576, fullScreen.isOn);
+                break;
+
             case Enums.Resolution.WXGA:
                 Screen.SetResolution(1366, 768, fullScreen.isOn);
                 break;

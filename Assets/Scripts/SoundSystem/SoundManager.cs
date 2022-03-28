@@ -23,10 +23,8 @@ public class SoundManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             Instance = this;
             LoadSounds();
-            sfxOn = PlayerPrefs.GetInt("sfx", 1) == 1;
-            musicOn = PlayerPrefs.GetInt("bgm", 1) == 1;
-            MuteSFX(!sfxOn);
-            MuteBGM(!musicOn);
+          
+           
         }
         else
         {
@@ -56,15 +54,6 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void MuteBGM(bool isMuted)
-    {
-        SoundsByType(SoundType.BGM).ForEach((s) => s.Mute(isMuted));
-    }
-
-    public void MuteSFX(bool isMuted)
-    {
-        SoundsByType(SoundType.SFX).ForEach((s) => s.Mute(isMuted));
-    }
 
     public void ChangeBGMVolume(float volume)
     {
